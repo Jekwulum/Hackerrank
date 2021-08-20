@@ -1,8 +1,15 @@
 
+
 def integers(a,b,c,d):
-    while a and b and c and d in range(1,1000):
-        print(a**b + c**d)
-        break
+    if a not in range(1, 1001):
+        return
+    if b not in range(1, 1001):
+        return
+    if c not in range(1, 1001):
+        return
+    if d not in range(1, 1001):
+        return
+    print(a**b + c**d)
 
 
 if __name__ == '__main__':
